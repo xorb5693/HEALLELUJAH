@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trainerinfo">
+
+    <Button
+        android:id="@+id/prevTrainerChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이전화면"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="회원 가입"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7EC0EE"
+        android:text="트레이너"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:enabled="false"/>
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="64dp"
+        android:text="아이디"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/passTrainer"
+        app:layout_constraintEnd_toStartOf="@+id/idTrainer"
+        app:layout_constraintTop_toTopOf="@+id/idTrainer" />
+
+    <EditText
+        android:id="@+id/idTrainer"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+
+    <Button
+        android:id="@+id/checkTrainer"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="중복확인"
+        app:layout_constraintBottom_toTopOf="@+id/passTrainer"
+        app:layout_constraintStart_toEndOf="@+id/idTrainer"
+        app:layout_constraintTop_toTopOf="@+id/idTrainer" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="비밀번호"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/passTrainer2"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/passTrainer" />
+
+    <EditText
+        android:id="@+id/passTrainer"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/idTrainer"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="@+id/idTrainer"
+        app:layout_constraintTop_toBottomOf="@+id/idTrainer" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 재입력"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nameTrainer"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/passTrainer2" />
+
+    <EditText
+        android:id="@+id/passTrainer2"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="비밀번호 재입력"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/passTrainer"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="@+id/passTrainer"
+        app:layout_constraintTop_toBottomOf="@+id/passTrainer" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nameTrainer"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/passTrainer2" />
+
+    <EditText
+        android:id="@+id/nameTrainer"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passTrainer2"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="@+id/passTrainer2"
+        app:layout_constraintTop_toBottomOf="@+id/passTrainer2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sexTrainer"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/nameTrainer" />
+
+    <RadioGroup
+        android:id="@+id/sexTrainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/nameTrainer"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/nameTrainer"
+        app:layout_constraintTop_toBottomOf="@+id/nameTrainer">
+
+        <RadioButton
+            android:id="@+id/maleTrainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="남성" />
+
+        <RadioButton
+            android:id="@+id/femaleTrainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="여성" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나이"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ageTrainer"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/ageTrainer" />
+
+    <EditText
+        android:id="@+id/ageTrainer"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="나이"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/nameTrainer"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/nameTrainer"
+        app:layout_constraintTop_toBottomOf="@+id/sexTrainer" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/trainerAddress"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/trainerAddress" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="휴대폰 번호"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/frontPhoneTrainer"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/frontPhoneTrainer" />
+
+    <Spinner
+        android:id="@+id/frontPhoneTrainer"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:gravity="right"
+        android:overlapAnchor="false"
+        android:scrollbars="vertical"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/backPhoneTrainer"
+        app:layout_constraintEnd_toStartOf="@+id/backPhoneTrainer"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/backPhoneTrainer" />
+
+    <EditText
+        android:id="@+id/backPhoneTrainer"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="'-'를 제외하고 입력"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/trainerbackaddress"
+        app:layout_constraintStart_toEndOf="@+id/frontPhoneTrainer"
+        app:layout_constraintTop_toBottomOf="@+id/trainerbackaddress" />
+
+    <Button
+        android:id="@+id/nextTrainerOnly"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#2196F3"
+        android:text="확인"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backPhoneTrainer"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/trainerbackaddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="상세 주소"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/trainerAddress"
+        app:layout_constraintStart_toStartOf="@+id/trainerAddress"
+        app:layout_constraintTop_toBottomOf="@+id/trainerAddress" />
+
+    <TextView
+        android:id="@+id/trainerAddress"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/list_selector_background"
+        android:backgroundTint="#2196F3"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="start|center"
+        android:text="도로명 주소"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ageTrainer"
+        app:layout_constraintStart_toStartOf="@+id/ageTrainer"
+        app:layout_constraintTop_toBottomOf="@+id/ageTrainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

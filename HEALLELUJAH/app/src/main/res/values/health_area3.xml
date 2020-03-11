@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="헬스영역3">
+        <item>3지망</item>
+        <item>린매스업</item>
+        <item>체중감량</item>
+        <item>다이어트</item>
+        <item>체형교정</item>
+        <item>약점보완</item>
+        <item>대회준비</item>
+        <item>프로필사진</item>
+        <item>재활교정</item>
+        <item>멸치탈출</item>
+        <item>선수준비</item>
+    </string-array>
+</resources>

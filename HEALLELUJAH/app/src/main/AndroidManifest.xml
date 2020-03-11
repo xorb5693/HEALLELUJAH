@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.heallelujah">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Contents"></activity>
+        <activity android:name=".chatting" />
+        <activity android:name=".message_list" />
+        <activity android:name=".MemeberInfo" />
+        <activity android:name=".matchingitem" />
+        <activity android:name=".MatchingInfo" />
+        <activity android:name=".MatchingList" />
+        <activity android:name=".AddressFind" />
+        <activity android:name=".trainerafterlogin" />
+        <activity android:name=".membershipafterlogin" />
+        <activity android:name=".trainercurriculum" />
+        <activity android:name=".traineronly" />
+        <activity android:name=".trainerinfo" />
+        <activity android:name=".membershipinfo" />
+        <activity android:name=".membershiponly" />
+        <activity android:name=".membershipchoice" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Trainer" />
+        <activity android:name=".Member" />
+        <activity android:name=".matchingAdapter" />
+        <activity android:name=".Trainerlist" />
+        <activity android:name=".messageitem" />
+        <activity android:name=".membermessagelistAdapter" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

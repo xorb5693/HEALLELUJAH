@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".membershiponly">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/prevmemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이전화면"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="회원 가입"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.010" />
+
+            <Button
+                android:id="@+id/buttonMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AAAAAA"
+                android:enabled="false"
+                android:text="회      원"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="230dp"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.110"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="    키"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toBottomOf="@+id/heightMember"
+                app:layout_constraintEnd_toStartOf="@+id/heightMember"
+                app:layout_constraintTop_toTopOf="@+id/heightMember"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/heightMember"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="키를 입력하세요.(cm)"
+                android:inputType="numberSigned"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.862"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.039" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="몸무게"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toBottomOf="@+id/weightMember"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/weightMember" />
+
+            <EditText
+                android:id="@+id/weightMember"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="몸무게를 입력하세요.(kg)"
+                android:inputType="numberSigned"
+                app:layout_constraintEnd_toEndOf="@+id/heightMember"
+                app:layout_constraintStart_toStartOf="@+id/heightMember"
+                app:layout_constraintTop_toBottomOf="@+id/heightMember" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="분야"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/realmMember"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/realmMember" />
+
+            <Spinner
+                android:id="@+id/realmMember"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@+id/weightMember"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/weightMember"
+                app:layout_constraintTop_toBottomOf="@+id/weightMember" />
+
+            <Spinner
+                android:id="@+id/realmMember2"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@+id/realmMember"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/realmMember"
+                app:layout_constraintTop_toBottomOf="@+id/realmMember" />
+
+            <Spinner
+                android:id="@+id/realmMember3"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@+id/realmMember2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/realmMember2"
+                app:layout_constraintTop_toBottomOf="@+id/realmMember2" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="137dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="횟수 당 가격"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toBottomOf="@+id/priceMember"
+                app:layout_constraintEnd_toStartOf="@+id/priceMember"
+                app:layout_constraintTop_toTopOf="@+id/priceMember" />
+
+            <EditText
+                android:id="@+id/priceMember"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="희망 가격(만 원)"
+                android:inputType="numberSigned"
+                app:layout_constraintEnd_toEndOf="@+id/weightMember"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/realmMember2"
+                app:layout_constraintTop_toBottomOf="@+id/realmMember3" />
+
+            <Button
+                android:id="@+id/nextMemberlogin"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#2196F3"
+                android:text="확인"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceMember"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

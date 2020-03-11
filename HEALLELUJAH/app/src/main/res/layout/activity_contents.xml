@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contents">
+
+    <Button
+        android:id="@+id/prevmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로 가기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contentactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쪽지"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/prevmessage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Totextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="To :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toinput"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/fromtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From : "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/frominput"
+        app:layout_constraintStart_toStartOf="@+id/Totextview"
+        app:layout_constraintTop_toBottomOf="@+id/toinput"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/contenttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="내용"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fromtextview"
+        app:layout_constraintTop_toBottomOf="@+id/fromtextview" />
+
+    <TextView
+        android:id="@+id/toinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prevmessage" />
+
+    <TextView
+        android:id="@+id/frominput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toinput"
+        app:layout_constraintTop_toBottomOf="@+id/toinput" />
+
+    <EditText
+        android:id="@+id/contentsEdit"
+        android:layout_width="310dp"
+        android:layout_height="399dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="fill_horizontal"
+        android:hint="보낼 말을 입력해주세요."
+        android:imeOptions="flagNoEnterAction"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenttextview" />
+
+    <Button
+        android:id="@+id/contentsTransmit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#2196F3"
+        android:text="전송"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentsEdit"
+        app:layout_constraintVertical_bias="0.968" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

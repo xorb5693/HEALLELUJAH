@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_weight="1"
+    tools:context=".trainercurriculum">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/prevtraineronly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로가기"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="커리큘럼"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/nextTrainerLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.060000002" />
+
+            <EditText
+                android:id="@+id/curriculumEdit"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="fill_horizontal"
+                android:hint="ex)1주차는 ... 진행합니다.\n주차별로 상세하게 작성하세요."
+                android:imeOptions="flagNoEnterAction"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="수상경력"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/curriculumEdit"
+                app:layout_constraintStart_toStartOf="@+id/curriculumEdit"
+                app:layout_constraintTop_toBottomOf="@+id/curriculumEdit" />
+
+            <EditText
+                android:id="@+id/careerEdit"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="fill_horizontal"
+                android:hint="내용을 입력해주세요."
+                android:imeOptions="flagNoAccessoryAction"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/textView30"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <Button
+                android:id="@+id/nextTrainerLogin"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#2196F3"
+                android:text="확인"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/careerEdit"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

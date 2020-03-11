@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemeberInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/prevMInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로 가기"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원 정보"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:text="이름 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/nameMemberInfo"
+                app:layout_constraintEnd_toStartOf="@+id/nameMemberInfo"
+                app:layout_constraintTop_toTopOf="@+id/nameMemberInfo" />
+
+            <TextView
+                android:id="@+id/nameMemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ageMemberInfo"
+                app:layout_constraintStart_toStartOf="@+id/textView73"
+                app:layout_constraintTop_toTopOf="@+id/ageMemberInfo" />
+
+            <TextView
+                android:id="@+id/ageMemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/nameMemberInfo"
+                app:layout_constraintTop_toBottomOf="@+id/nameMemberInfo" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/sexMemberInfo"
+                app:layout_constraintStart_toStartOf="@+id/textView75"
+                app:layout_constraintTop_toTopOf="@+id/sexMemberInfo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/sexMemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/ageMemberInfo"
+                app:layout_constraintTop_toBottomOf="@+id/ageMemberInfo" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="희망 분야 1 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/realmMemberInfo"
+                app:layout_constraintStart_toStartOf="@+id/textView76"
+                app:layout_constraintTop_toTopOf="@+id/realmMemberInfo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/realmMemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/sexMemberInfo"
+                app:layout_constraintTop_toBottomOf="@+id/sexMemberInfo" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="희망 분야 2 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/realmMemberInfo2"
+                app:layout_constraintStart_toStartOf="@+id/textView77"
+                app:layout_constraintTop_toBottomOf="@+id/realmMemberInfo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/realmMemberInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/realmMemberInfo"
+                app:layout_constraintTop_toBottomOf="@+id/realmMemberInfo" />
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="희망 분야 3 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/realmMemberInfo3"
+                app:layout_constraintStart_toStartOf="@+id/textView78"
+                app:layout_constraintTop_toTopOf="@+id/realmMemberInfo3" />
+
+            <TextView
+                android:id="@+id/realmMemberInfo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/realmMemberInfo2"
+                app:layout_constraintTop_toBottomOf="@+id/realmMemberInfo2" />
+
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="희망 가격 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/priceMemberInfo"
+                app:layout_constraintStart_toStartOf="@+id/textView79"
+                app:layout_constraintTop_toTopOf="@+id/priceMemberInfo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/priceMemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/realmMemberInfo3"
+                app:layout_constraintTop_toBottomOf="@+id/realmMemberInfo3" />
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="키 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/heightMemberInfo"
+                app:layout_constraintStart_toStartOf="@+id/textView80"
+                app:layout_constraintTop_toTopOf="@+id/heightMemberInfo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/heightMemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/priceMemberInfo"
+                app:layout_constraintTop_toBottomOf="@+id/priceMemberInfo" />
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="몸무게 :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/weightMemberInfo"
+                app:layout_constraintStart_toStartOf="@+id/textView81"
+                app:layout_constraintTop_toTopOf="@+id/weightMemberInfo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/weightMemberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/heightMemberInfo"
+                app:layout_constraintTop_toBottomOf="@+id/heightMemberInfo" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".membershipafterlogin">
+
+    <ImageButton
+        android:id="@+id/messageMember"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#7EC0EE"
+        android:scaleType="fitCenter"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/infoMember"
+        app:layout_constraintTop_toTopOf="@+id/infoMember"
+        app:srcCompat="@drawable/ic_mail_outline_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="쪽지"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/messageMember"
+        app:layout_constraintStart_toStartOf="@+id/messageMember"
+        app:layout_constraintTop_toBottomOf="@+id/messageMember" />
+
+    <ImageButton
+        android:id="@+id/infoMember"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="#7EC0EE"
+        android:scaleType="fitCenter"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="기본정보수정"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/infoMember"
+        app:layout_constraintStart_toStartOf="@+id/infoMember"
+        app:layout_constraintTop_toBottomOf="@+id/infoMember" />
+
+    <ImageButton
+        android:id="@+id/mattchingMember"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#7EC0EE"
+        android:scaleType="fitCenter"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/messageMember"
+        app:layout_constraintStart_toStartOf="@+id/messageMember"
+        app:layout_constraintTop_toBottomOf="@+id/messageMember"
+        app:srcCompat="@drawable/ic_group_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="매칭"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mattchingMember"
+        app:layout_constraintStart_toStartOf="@+id/mattchingMember"
+        app:layout_constraintTop_toBottomOf="@+id/mattchingMember" />
+
+    <ImageButton
+        android:id="@+id/onlyMember"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#7EC0EE"
+        android:scaleType="fitCenter"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/infoMember"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/infoMember"
+        app:layout_constraintTop_toBottomOf="@+id/infoMember"
+        app:srcCompat="@drawable/ic_directions_run_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="회원정보수정"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/onlyMember"
+        app:layout_constraintStart_toStartOf="@+id/onlyMember"
+        app:layout_constraintTop_toBottomOf="@+id/onlyMember" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 전용"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

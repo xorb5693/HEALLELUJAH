@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".traineronly">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="230dp"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.110"
+                app:srcCompat="@drawable/logo" />
+
+            <Button
+                android:id="@+id/prevTrainerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이전화면"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="회원 가입"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.010"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7EC0EE"
+                android:text="트레이너"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:enabled="false"/>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="주요 영역"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toBottomOf="@+id/realmTrainer"
+                app:layout_constraintEnd_toStartOf="@+id/realmTrainer"
+                app:layout_constraintTop_toTopOf="@+id/realmTrainer" />
+
+            <Spinner
+                android:id="@+id/realmTrainer"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.679"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.465" />
+
+            <Spinner
+                android:id="@+id/realmTrainer2"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@+id/realmTrainer"
+                app:layout_constraintHorizontal_bias="0.679"
+                app:layout_constraintStart_toStartOf="@+id/realmTrainer"
+                app:layout_constraintTop_toBottomOf="@+id/realmTrainer" />
+
+            <Spinner
+                android:id="@+id/realmTrainer3"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@+id/realmTrainer2"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="@+id/realmTrainer2"
+                app:layout_constraintTop_toBottomOf="@+id/realmTrainer2" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="횟수 당 가격"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toBottomOf="@+id/priceTrainer"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toTopOf="@+id/priceTrainer" />
+
+            <EditText
+                android:id="@+id/priceTrainer"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="횟수 당 가격(만 원)"
+                android:inputType="numberSigned"
+                app:layout_constraintEnd_toEndOf="@+id/realmTrainer"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/realmTrainer"
+                app:layout_constraintTop_toBottomOf="@+id/realmTrainer3" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="근무 시간"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toTopOf="@+id/careerTrainer"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toTopOf="@+id/timeTrainer" />
+
+            <EditText
+                android:id="@+id/timeTrainer"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ex) 7시~17시"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/priceTrainer"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/realmTrainer"
+                app:layout_constraintTop_toBottomOf="@+id/priceTrainer" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="운동 경력"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toBottomOf="@+id/careerTrainer"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toTopOf="@+id/careerTrainer" />
+
+            <EditText
+                android:id="@+id/careerTrainer"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="운동 경력(년)"
+                android:inputType="numberSigned"
+                app:layout_constraintEnd_toEndOf="@+id/timeTrainer"
+                app:layout_constraintHorizontal_bias="0.815"
+                app:layout_constraintStart_toStartOf="@+id/realmTrainer"
+                app:layout_constraintTop_toBottomOf="@+id/timeTrainer" />
+
+            <Button
+                android:id="@+id/nextTrainercurriculum"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#2196F3"
+                android:text="확인"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/careerTrainer"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

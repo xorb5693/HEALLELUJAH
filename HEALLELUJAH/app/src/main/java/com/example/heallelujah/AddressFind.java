@@ -28,7 +28,8 @@ public class AddressFind extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         webView.addJavascriptInterface(new AddressFind.AndroidBridge(), "TestApp");
-        webView.setWebChromeClient(new WebChromeClient());
+        webView.setWebChromeClient(new WebChromeClient());//팝업을 허용하기 위해 setWebChromeClinet에 new WebChromeClient를 이용해 
+                                                          // 팝업허용함.(그렇지않으면 하얀화면뜸)
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("URL 입력");
     }
